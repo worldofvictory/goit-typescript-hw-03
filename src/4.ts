@@ -34,7 +34,8 @@ abstract class House {
         if (this.door) {
             this.tenants.push(person);
         }
-    }
+  }
+  abstract openDoor(key: Key): void;
 }
 
 class MyHouse extends House {
